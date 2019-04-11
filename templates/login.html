@@ -1,0 +1,21 @@
+<!doctype html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+</head>
+<body>
+<h1>Welcome</h1>
+<form action="{{ url_for('home_page') }}" method="post">
+
+    <input type="text" name="username" placeholder="Enter your username">
+    <br>
+    <input type="password" name="password" placeholder="Enter your password">
+    <br>
+    <input type="submit">
+</form>
+
+<a href="{{ url_for('sign_up') }}">Sign Up</a>
+
+</body>
+</html>
